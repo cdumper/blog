@@ -8,25 +8,25 @@
 #                                                 /____/        
 #
 # Title of your website
-title: "Feeling Responsive"
+title: "Storybook for my 70's"
 
 
 # The slogan describes your website and is used on homepage in <title> and other important places
-slogan: "A Flexible Theme for Jekyll"
+slogan: "The life journey of cdumper"
 
 
 # The description is used on homepage and in the footer to quickly describe your website. Use a maximum of 150 characters for SEO-purposes.
-description: "»Feeling Responsive« is a responsive theme for Jekyll based on the fabulous foundation framework with beautiful typography and a bright color palette."
+description: "While people read, experience and live, chances are it all just passed through. For my past 24 years, I can only grasp few moment in fragments. The site is for 50 years later me, until then I'll be reading the best story book ever."
 
 
 # This URL is the main adresse. Don't include a slash at the end.
 #
-url: "https://phlow.github.io/feeling-responsive"
+url: "https://cdumper.github.io/blog"
 baseurl: ""
 
 # This is for the editing function in _/includes/improve_content.html
 # Leave it empty if your site is not on GitHub/GitHub Pages
-improve_content: https://github.com/Phlow/feeling-responsive/edit/gh-pages
+improve_content: https://github.com/cdumper/blog/edit/gh-pages
 
 # This URL points directly to the images directory making
 # things easier to link to images in posts and templates. It needs a slash.
@@ -34,7 +34,7 @@ improve_content: https://github.com/Phlow/feeling-responsive/edit/gh-pages
 # Example: <img src="{{ site.urlimg }}/{{ post.image.title }}">
 # Markdown-Example for posts ![Image Text]({{ site.urlimg }}/image.jpg)
 #
-urlimg: "http://phlow.github.io/feeling-responsive/images/"
+urlimg: "http://cdumper.github.io/blog/images/"
 
 
 # Logo size is 600x80 pixels
@@ -42,7 +42,7 @@ logo: "logo.png"
 
 
 # Paginates all X entries
-paginate: 5
+paginate: 6
 
 
 # Pagination path › Important for blog page in /blog/ to work
@@ -87,7 +87,7 @@ defaults:
       show_meta: true 	# Show metadata beneath all pages
       # sidebar:    		# Possible values › left, right › by default there will be no sidebar
       comments: false
-      author: "your_author_name"
+      author: "cdumper"
   -
     scope:
       path: ""        
@@ -96,7 +96,7 @@ defaults:
       show_meta: true   # Show metadata beneath all posts
       # sidebar:        # Possible values › left, right › by default there will be no sidebar
       comments: false
-      author: "your_author_name"
+      author: "cdumper"
 
 
 
@@ -118,9 +118,9 @@ defaults:
 #   ___/ / /___/ /_/ / 
 #  /____/_____/\____/    Verify Website to Webmaster Tools
 
-google_author:             "https://plus.google.com/u/0/118311555303973066167"
-google_site_verification:  "Vk0IOJ2jwG_qEoG7fuEXYqv0m2rLa8P778Fi_GrsgEQ"
-bing_webmastertools_id:    "0FB4C028ABCF07C908C54386ABD2D97F"
+google_author:             "https://plus.google.com/u/1/105241444261351647417"
+google_site_verification:  "d9Rji2k1jCjnDgfVPKAGLyvA3pM-BDrOR_-i5_xZ4jM"
+bing_webmastertools_id:    ""
 # alexa_verify_id:         ""
 
 
@@ -180,7 +180,7 @@ og_description:                     "Feeling Responsive is built on the fabulous
 #
 # used in _includes/comments.html
 
-disqus_shortname: feelingresponsive
+disqus_shortname: blog
 
 
 #      _____                
