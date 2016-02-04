@@ -5,23 +5,23 @@
 # this work, you have to use › layout: frontpage
 #
 layout: frontpage
-title: "A storybook for my 70's - Life journey of cdumper"
+title: "Seed Incubator - Mind Palace of cdumper"
 header:
    image_fullwidth: "header_unsplash_12.jpg"
 widget-1:
-    title: "Blogs"
-    url: 'http://cdumper.github.io/feeling-responsive/blog/'
+    title: "Studying Room"
+    url: 'http://cdumper.github.io/blog/study/bookshelf/'
     text: 'Every good portfolio website has a blog with fresh news, thoughts and develop&shy;ments of your activities. <em>Feeling Responsive</em> offers you a fully functional blog with an archive page to give readers a quick overview of all your posts.'
     image: unsplash_9-302x182.jpg
 widget-2:
-    title: "Why use this theme?"
-    url: 'http://phlow.github.io/feeling-responsive/info/'
+    title: "Living Room"
+    url: 'http://cdumper.github.io/blog/experience/'
     text: '<em>Feeling Responsive</em> is heavily customizable.<br>1. Language-Support :)<br>2. Optimized for speed and it&#39;s responsive.<br>3. Built on <a href="http://foundation.zurb.com/">Foundation Framework</a>.<br>4. Seven different Headers.<br>5. Customizable navigation, footer,...'
-    video: '<a href="#" data-reveal-id="videoModal"><img src="http://phlow.github.io/feeling-responsive/images/start-video-feeling-responsive-302x182.jpg" width="302" height="182" alt=""></a>'
+    video: '<a href="#" data-reveal-id="videoModal"><img src="http://cdumper.github.io/blog/images/start-video-feeling-responsive-302x182.jpg" width="302" height="182" alt=""></a>'
 widget-3:
-    title: "Download Theme"
-    url: 'https://github.com/Phlow/feeling-responsive'
-    text: '<em>Feeling Responsive</em> is totally free and licensed under the MIT License. Make it your own and do with it what you want. Grab your copy or clone it at GitHub and start your website with it. Then tell me via Twitter <a href="http://twitter.com/phlow">@phlow</a>.'
+    title: "Thinking Room"
+    url: 'http://cdumper.github.io/blog/thoughts/'
+    text: 'Brilliant ideas are like lightning in the dark. It flashes as well as lighten up the world. Good ideas worth being recorded and further spreading. Proactive thinking makes human differ in animals, structured thinking gives them the key to improve.'
     image: github-303x182.jpg
 ---
 
