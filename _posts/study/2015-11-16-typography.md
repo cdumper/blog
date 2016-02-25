@@ -11,7 +11,7 @@ image:
     caption: Image by Antonio
     caption_url: "http://www.aisleone.net/"
 categories:
-    - Study
+    - study
 ---
 <div class="row">
 <div class="medium-4 medium-push-8 columns" markdown="1">
@@ -29,7 +29,6 @@ categories:
 
 ## Lato – A Sans Serif Typeface Family
 
-[Lato][4] is a sans serif typeface family started in the summer of 2010 by Warsaw-based designer Łukasz Dziedzic. »Lato« means »Summer« in Polish. In December 2010 the Lato family was published under the Open Font License by his foundry tyPoland, with support from Google. 
+[Lato][4] is a sans serif typeface family started in the summer of 2010 by Warsaw-based designer Łukasz Dziedzic. »Lato« means »Summer« in Polish. In December 2010 the Lato family was published under the Open Font License by his foundry tyPoland, with support from Google.
 
 > <span class="teaser">I do not think of type as something that should be readable. It should be beautiful.</span><cite>[Ed Benguiat][3]</cite>
-

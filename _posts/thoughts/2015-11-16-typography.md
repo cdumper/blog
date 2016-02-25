@@ -11,7 +11,7 @@ image:
     caption: Image by Antonio
     caption_url: "http://www.aisleone.net/"
 categories:
-    - Study
+    - thoughts
 ---
 <div class="row">
 <div class="medium-4 medium-push-8 columns" markdown="1">
