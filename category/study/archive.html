@@ -1,11 +1,11 @@
 ---
 layout: default
-title: "MindMap"
-teaser: "Check out all notes in my MindMap. Click on a headline to read the teaser."
+title: "Bookshelf"
+teaser: "Check out all notes in my bookshelf. Click on a headline to read the teaser."
 breadcrumb: true
 header:
    image_fullwidth: header_unsplash_8.jpg
-permalink: "thoughts/mindmap/"
+permalink: "category/study/archive/"
 ---
 <div id="blog-index" class="row">
 	<div class="small-12 columns t30">
@@ -14,7 +14,7 @@ permalink: "thoughts/mindmap/"
 
 		<dl class="accordion" data-accordion>
 			{% assign counter = 1 %}
-			{% for post in site.categories['thoughts'] limit:1000 %}
+			{% for post in site.categories['study'] limit:1000 %}
 			<dd class="accordion-navigation">
 			<a href="#panel{{ counter }}"><span class="iconfont"></span> {% if post.subheadline %}{{ post.subheadline }} › {% endif %}<strong>{{ post.title }}</strong></a>
 				<div id="panel{{ counter }}" class="content">

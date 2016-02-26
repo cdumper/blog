@@ -65,6 +65,12 @@
   dropdown:
   - title: "Blog Archive"
     url: "/blog/archive/"
+  - title: "Study"
+    url: "/category/study/"
+  - title: "Experience"
+    url: "/category/experience/"
+  - title: "Thoughts"
+    url: "/category/thoughts/"
 
 - title: "Search"
   url: "/search/"

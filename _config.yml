@@ -42,7 +42,7 @@ logo: "logo.png"
 
 
 # Paginates all X entries
-paginate: 6
+paginate: 5
 
 
 # Pagination path › Important for blog page in /blog/ to work
@@ -224,3 +224,8 @@ google_analytics_tracking_id: UA-60112281-1
 # tawkto_embed_uri:
 
 gems: [jekyll-paginate]
+
+##
+# Custom variables
+##
+# category_title_prefix: Blogs in
