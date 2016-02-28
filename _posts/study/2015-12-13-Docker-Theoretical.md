@@ -7,10 +7,9 @@ header: no
 image:
     thumb:  homepage_typography_thumb.jpg
     homepage: homepage_typography.jpg
-    caption: Image by Antonio
-    caption_url: "http://www.aisleone.net/"
 categories:
     - study
+    - docker
 ---
 
 ##Docker Theoratical
