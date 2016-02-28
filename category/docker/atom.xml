@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+   
+    <title>RealJenius.com - Category: docker</title>
+   
+   <link>http://realjenius.com</link>
+   <description>I'm a software developer in the game industry, and have been (for better or worse) coding on the Java platform for the last decade. I also do all my own stunts.</description>
+   <language>en-us</language>
+   <managingEditor>R.J. Lorimer</managingEditor>
+   <atom:link href="rss" rel="self" type="application/rss+xml" />
+
+    
+	  <item>
+        <title>Docker in Practice</title>
+        <link>http://realjenius.com/study/docker/Docker-in-practice/</link>
+		<author>R.J. Lorimer</author>
+		<pubDate>2016-01-11T00:00:00+08:00</pubDate>
+		<guid>http://realjenius.com/study/docker/Docker-in-practice/</guid>
+		<description><![CDATA[
+		   <h2 id="docker-in-practice">Docker in practice</h2>
+<p>###Running public images
+	docker run hello-world
+<strong>A container is a stripped-to-basics version of a Linux operating system. An image is software you load into a container. When you ran the command, the Docker software:</strong></p>
+
+<ul>
+  <li>checked to see if you had the <code class="highlighter-rouge">hello-world</code> software image</li>
+  <li>downloaded the image from the <a href="https://hub.docker.com/">Docker Hub</a></li>
+  <li>loaded the image into the container and “ran” it</li>
+</ul>
+
+<h3 id="build-your-own-image">Build your own image</h3>
+<p>####Step 1 : Write a Dockrfile
+	A Dockerfile describes the software that is “baked” into an image.
+	It isn’t just ingredients tho, it can tell the software what environment to use or what commands to run.</p>
+
+<p>The <code class="highlighter-rouge">FROM</code> keyword tells Docker which image your image is based on. You are basing your new work on the existing <code class="highlighter-rouge">whalesay</code> image. <code class="highlighter-rouge">FROM docker/whalesay:latest</code></p>
+
+<h4 id="step-2--build-an-image-from-your-dockerfile">Step 2 : Build an image from your Dockerfile</h4>
+<div class="highlighter-rouge"><pre class="highlight"><code>docker build -t docker-whale . The `docker build -t docker-whale .` command takes the `Dockerfile` in the current directory, and builds an image called `docker-whale` on your local machine
+</code></pre>
+</div>
+
+<h3 id="cheat-sheet">Cheat sheet</h3>
+<ul>
+  <li>Create a new docker vm:
+<code class="highlighter-rouge">docker-machine create --driver virtualbox default</code></li>
+  <li>List docker machines:
+<code class="highlighter-rouge">docker-machine ls</code></li>
+  <li>Get the environment commands for VM:
+<code class="highlighter-rouge">docker-machine env default</code></li>
+  <li>Connect shell to the machine:
+<code class="highlighter-rouge">eval "$(docker-machine env default)"</code></li>
+  <li>Start an NGINX container on the DOCKER_HOST:
+<code class="highlighter-rouge">docker run -d -P --name web nginx</code></li>
+  <li>Display your running container:
+<code class="highlighter-rouge">docker ps</code></li>
+  <li>View just the container’s ports:
+<code class="highlighter-rouge">docker ps web</code></li>
+  <li>Get the address of the default VM:
+<code class="highlighter-rouge">docker-machine ip default</code></li>
+  <li>To stop running container:
+<code class="highlighter-rouge">docker stop web</code></li>
+  <li>To remove container:
+<code class="highlighter-rouge">docker rm web</code></li>
+</ul>
+
+		]]></description>
+	  </item>
+    
+	  <item>
+        <title>Docker Theoretical</title>
+        <link>http://realjenius.com/study/docker/Docker-Theoretical/</link>
+		<author>R.J. Lorimer</author>
+		<pubDate>2015-12-13T00:00:00+08:00</pubDate>
+		<guid>http://realjenius.com/study/docker/Docker-Theoretical/</guid>
+		<description><![CDATA[
+		   <h2 id="docker-theoratical">Docker Theoratical</h2>
+<p>Docker是一个轻量级虚拟化技术。
+除了基于Docker技术解决构建分布式平台无法回避的经典问题，docker及其生态系统主要带来了以下几点好处：</p>
+
+<ul>
+  <li>持续部署与测试</li>
+  <li>跨云平台支持</li>
+  <li>环境标准化和版本控制</li>
+  <li>搞资源利用率与隔离</li>
+  <li>容器跨平台性与镜像</li>
+  <li>易于理解和易用</li>
+  <li>应用镜像仓库</li>
+</ul>
+
+		]]></description>
+	  </item>
+    
+  </channel>
+</rss>

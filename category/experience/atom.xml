@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+   
+    <title>RealJenius.com - Category: experience</title>
+   
+   <link>http://realjenius.com</link>
+   <description>I'm a software developer in the game industry, and have been (for better or worse) coding on the Java platform for the last decade. I also do all my own stunts.</description>
+   <language>en-us</language>
+   <managingEditor>R.J. Lorimer</managingEditor>
+   <atom:link href="rss" rel="self" type="application/rss+xml" />
+
+    
+	  <item>
+        <title>Now with Comments!</title>
+        <link>http://realjenius.com/experience/comments/</link>
+		<author>R.J. Lorimer</author>
+		<pubDate>2015-11-15T00:00:00+08:00</pubDate>
+		<guid>http://realjenius.com/experience/comments/</guid>
+		<description><![CDATA[
+		   <p>If you want to use Disqus-Comments with <em>Feeling Responsive</em>, just open <code class="highlighter-rouge">config.yml</code> and add your <code class="highlighter-rouge">disqus_shortname</code>. <a href="https://disqus.com/websites/">More on how to use Disqus ›</a></p>
+
+<p>By default comments are turned off. You can customize the default behaviour in <code class="highlighter-rouge">config.yml</code>. To <strong>turn on comments</strong> just add <code class="highlighter-rouge">comments: true</code> to front matter using the page layout <code class="highlighter-rouge">layout: page</code>.</p>
+
+		]]></description>
+	  </item>
+    
+  </channel>
+</rss>

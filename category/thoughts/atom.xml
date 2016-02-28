@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+   
+    <title>RealJenius.com - Category: thoughts</title>
+   
+   <link>http://realjenius.com</link>
+   <description>I'm a software developer in the game industry, and have been (for better or worse) coding on the Java platform for the last decade. I also do all my own stunts.</description>
+   <language>en-us</language>
+   <managingEditor>R.J. Lorimer</managingEditor>
+   <atom:link href="rss" rel="self" type="application/rss+xml" />
+
+    
+	  <item>
+        <title>This is a test post in thoughts</title>
+        <link>http://realjenius.com/thoughts/typography/</link>
+		<author>R.J. Lorimer</author>
+		<pubDate>2015-11-16T00:00:00+08:00</pubDate>
+		<guid>http://realjenius.com/thoughts/typography/</guid>
+		<description><![CDATA[
+		   <div class="row">
+<div class="medium-4 medium-push-8 columns">
+    <div class="panel radius">
+      <p id="toc"><strong>Table of Contents</strong></p>
+<ul id="markdown-toc">
+  <li><a href="#lato--a-sans-serif-typeface-family" id="markdown-toc-lato--a-sans-serif-typeface-family">Lato – A Sans Serif Typeface Family</a></li>
+</ul>
+
+    </div>
+  </div><!-- /.medium-4.columns -->
+
+
+
+<div class="medium-8 medium-pull-4 columns">
+
+    <h2 id="lato--a-sans-serif-typeface-family">Lato – A Sans Serif Typeface Family</h2>
+
+    <p>[Lato][4] is a sans serif typeface family started in the summer of 2010 by Warsaw-based designer Łukasz Dziedzic. »Lato« means »Summer« in Polish. In December 2010 the Lato family was published under the Open Font License by his foundry tyPoland, with support from Google.</p>
+
+    <blockquote>
+      <p><span class="teaser">I do not think of type as something that should be readable. It should be beautiful.</span><cite>[Ed Benguiat][3]</cite></p>
+    </blockquote>
+  </div></div>
+
+		]]></description>
+	  </item>
+    
+  </channel>
+</rss>

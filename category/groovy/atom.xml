@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+   
+    <title>RealJenius.com - Category: groovy</title>
+   
+   <link>http://realjenius.com</link>
+   <description>I'm a software developer in the game industry, and have been (for better or worse) coding on the Java platform for the last decade. I also do all my own stunts.</description>
+   <language>en-us</language>
+   <managingEditor>R.J. Lorimer</managingEditor>
+   <atom:link href="rss" rel="self" type="application/rss+xml" />
+
+    
+	  <item>
+        <title>Groovy</title>
+        <link>http://realjenius.com/study/groovy/Groovy/</link>
+		<author>R.J. Lorimer</author>
+		<pubDate>2015-11-30T00:00:00+08:00</pubDate>
+		<guid>http://realjenius.com/study/groovy/Groovy/</guid>
+		<description><![CDATA[
+		   <h2 id="groovy">Groovy</h2>
+
+<h3 id="syntax">Syntax</h3>
+<p><strong>Strings</strong>:</p>
+
+<ul>
+  <li>single quoted string</li>
+</ul>
+
+<blockquote>
+  <p>single line plain string</p>
+</blockquote>
+
+<ul>
+  <li>double quoted string</li>
+</ul>
+
+<blockquote>
+  <p>support string interpolation</p>
+</blockquote>
+
+<ul>
+  <li>triple quoted string</li>
+</ul>
+
+<blockquote>
+  <p>multiple line plain string</p>
+</blockquote>
+
+<p>```groovy
+def number = 1
+def eagerGString = “value == ${number}”
+def lazyGString = “value == ${ -&gt; number}”</p>
+
+<p>assert eagerGString == “value == 1”
+assert lazyGString == “value == 1”</p>
+
+<p>number = 2</p>
+
+<p>assert eagerGString == “value == 1”
+assert lazyGString == “value == 2”
+```</p>
+
+		]]></description>
+	  </item>
+    
+  </channel>
+</rss>

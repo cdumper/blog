@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+   
+   	<title>RealJenius.com - Tag: pattern</title>
+   
+   <link>http://realjenius.com</link>
+   <description>I'm a software developer in the game industry, and have been (for better or worse) coding on the Java platform for the last decade. I also do all my own stunts.</description>
+   <language>en-us</language>
+   <managingEditor>R.J. Lorimer</managingEditor>
+   <atom:link href="rss" rel="self" type="application/rss+xml" />
+
+    
+	  <item>
+        <title>Header Image With Pattern</title>
+        <link>http://realjenius.com/design/header-image-pattern/</link>
+		<author>R.J. Lorimer</author>
+		<pubDate>2014-10-08T00:00:00+08:00</pubDate>
+		<guid>http://realjenius.com/design/header-image-pattern/</guid>
+		<description><![CDATA[
+		   <p>It’s so easy to do. Just define in front matter an image and a pattern image. Instead of a pattern you can also use a color. Have a look at the <a href="https://cdumper.github.io/blog/design/header-image-color/">example with a background color</a>.</p>
+
+<h2 id="front-matter-code">Front Matter Code</h2>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>header:
+    image:  "header_unsplash_2-970x.jpg"
+    pattern:  "pattern_concrete.jpg"
+    caption: This is a caption for the header image with link
+    caption_url: https://unsplash.com/
+</code></pre>
+</div>
+
+<h3 class="t60" id="all-header-styles">All Header-Styles</h3>
+
+<ul class="side-nav">
+
+  
+
+    
+      <li><a href="https://cdumper.github.io/blog/design/no-header/">Headers With Style &middot; <strong>No Header</strong></a></li>
+    
+      <li><a href="https://cdumper.github.io/blog/design/no-header-but-image/">Headers With Style &middot; <strong>No Header but Article Image</strong></a></li>
+    
+      <li><a href="https://cdumper.github.io/blog/design/header-with-text/">Headers With Style &middot; <strong>Header With Text</strong></a></li>
+    
+      <li><a href="https://cdumper.github.io/blog/design/header-logo-only/">Headers With Style &middot; <strong>Header With Logo Only</strong></a></li>
+    
+      <li><a href="https://cdumper.github.io/blog/design/header-image-color/">Headers With Style &middot; <strong>Header Image With Background Color</strong></a></li>
+    
+      <li><a href="https://cdumper.github.io/blog/design/header-full-width-image/">Headers With Style &middot; <strong>Header with a Full-Width-Image</strong></a></li>
+    
+      <li><a href="https://cdumper.github.io/blog/design/header-image-pattern/">Headers With Style &middot; <strong>Header Image With Pattern</strong></a></li>
+    
+
+  
+</ul>
+
+		]]></description>
+	  </item>
+    
+  </channel>
+</rss>

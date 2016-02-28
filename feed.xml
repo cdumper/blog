@@ -1,20 +1,736 @@
----
----
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>{{ site.title | xml_escape }}</title>
-    <description>{{ site.description | xml_escape }}</description>
-    <link>{{ site.url }}{{ site.baseurl }}/</link>
-    <atom:link href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" rel="self" type="application/rss+xml" />
-    {% for post in site.posts limit:10 %}
+    <title>Storybook for my 70&#39;s</title>
+    <description>While people read, experience and live, chances are it all just passed through. For my past 24 years, I can only grasp few moment in fragments. The site is for 50 years later me, until then I&#39;ll be reading the best story book ever.</description>
+    <link>https://cdumper.github.io/blog/</link>
+    <atom:link href="https://cdumper.github.io/blog/feed.xml" rel="self" type="application/rss+xml" />
+    
       <item>
-        <title>{{ post.title | xml_escape }}</title>
-        <description>{{ post.content | xml_escape }}</description>
-        <pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
-        <link>{{ post.url | prepend: site.baseurl | prepend: site.url }}</link>
-        <guid isPermaLink="true">{{ post.url | prepend: site.baseurl | prepend: site.url }}</guid>
+        <title>Knowledge Inflation</title>
+        <description>&lt;h2 id=&quot;section&quot;&gt;怎样让自己的知识保值&lt;/h2&gt;
+
+&lt;p&gt;晚上有空仔细读了一遍前公司大牛李光磊的一个系列文章，主题是知识经济学。文章由目前知识膨胀的大背景引发出了一系列的思考。&lt;/p&gt;
+
+&lt;p&gt;所谓知识膨胀就是知识正在被以远超过知识工作者能消化能力的速度制造出来，罪魁祸首无疑使互联网。一个直观的例子就是凡事问谷歌就好了，不管是做一道菜还是养鱼养花甚至是怎样拿lego做出摩天大楼，这些通通都可以通过搜索引擎找到答案。获得这些知识的成本变低了，换句话说就是知识容易被复制传播，那么必然将导致它的价值被稀释。这种情况下就得去考虑自己已获得知识的保值升值，以及对于新知识的投资。文中引入了知识漏斗的概念来解答这个问题。&lt;/p&gt;
+
+&lt;p&gt;知识可以被分成三个层次，来代表我们处理知识的三个阶段：mystery，heuristic和algorithm。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;em&gt;mystery的知识属于__未知领域__，我们甚至无法了解这个问题本身是什么问题。典型的问题比如“如何得到最好的设计”，“怎么获得美满的婚姻”，甚至一些看上去不那么难回答的问题实际上也属于这类问题，比如“下一个客户从哪来”，“如何让业务增长十倍”。这类问题中的每个问题都是独特的问题，就好像并不是所有企业都能做大十倍，而且做大过程中的方式也不一定相同。再比如对于某个项目有效的手法，对别的项目不一定适用，都是一个道理，有时候又被称作艺术。&lt;/em&gt;&lt;/p&gt;
+
+  &lt;p&gt;&lt;em&gt;algorithm的知识属于__完全已知领域__，在这个领域没有复杂问题，所有的复杂性都被解决掉了。无论在何种环境下，按照algorithm来作，总能得到相同或者是可预期的结果。这类知识往往是像“如何列出磁盘目录”，“房贷手续是怎样的”，“在东直门哪里能买到钱包”之类的问题。对于这类知识，你知道就是知道，不知道就是不知道。较容易通过训练获得，其终极形式就是写成程序，完全不用人来作。&lt;/em&gt;&lt;/p&gt;
+
+  &lt;p&gt;&lt;em&gt;从mystery转向algorithm就需要heuristic，我如何把一个未知的问题转化为已知的algorithm，或者我是能够去除掉mystery中的复杂性用简单的algorithm来解决它。或是说，你能否把艺术工程化或者流程化，去掉其中的文艺范。推理，发散，类比等等的都是这个阶段需要的技能。大凡革命性的飞跃，都源自把mystery变成algorithm”&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;algorithm的知识是廉价而易于获得的，真正valuable的东西是heuristic有启发的知识，例如Martin Fowler重构里的寻找bad smell，将如何改善既有代码的设计算法化。&lt;/p&gt;
+
+&lt;h2 id=&quot;section-1&quot;&gt;知行合一&lt;/h2&gt;
+&lt;p&gt;这是文中引申出的另一个观点，大意是&lt;strong&gt;人们不会知道你掌握多少知识，只会看到你表现出来了多少知识&lt;/strong&gt;。世界上的每一个独立的人之于所有的人都是一个黑盒，别人只能够通过我们的行为来判断。因此当你掌握了某项知识的时候就应该从外在行为上表现出来，这样你的知识才发挥了价值。例如这个月每天晚上通宵达旦的学习HTML5，但是如果你没有用H5做过什么项目解决什么问题做过什么分享或者连聊天时都没有稍微深入的谈论过，那么H5对于现在的你来说就没有产生价值。这就证明了另一件事，&lt;strong&gt;获得知识的起点应该是基于问题而不是为了学习。反馈是学习的唯一途径。 输入只是娱乐，输出才是学习。&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;学习过程中&lt;strong&gt;不要因人废言&lt;/strong&gt;，一句话有没有道理，跟说话的人是否是专家，没有关系。跟你是否喜欢他/她，也没有关系。&lt;strong&gt;易于因人废言的人，对自己也特别没信心，难以通过分享，辩论来检验自己的认知。&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;section-2&quot;&gt;知识工作者的工作细分是一种妥协&lt;/h2&gt;
+&lt;p&gt;对于传统行业来说，分工是一个提升效率的优化措施。一个渔夫只具备打鱼的能力就能够住着坚实的房子，喝着牛奶吃着米饭，穿着精美的衣服皮鞋。他只需要把打鱼这件事做好就能用自己的成果来换取别人的。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;em&gt;但这一切都有个前提, 就是你可以直接应用别人的工作产物, 而不需要跟这个人交互, 也不需要关心产物是如何产生的&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;对于知识工作者来说这一点似乎有些不现实，对于任何的知识传递都是有代价的，通常人们会通过交流沟通来弥补信息丢失。只有当一个人真的搞不定一件事的时候才会考虑分工。理论上来讲，人脑的容量近乎无穷，只要给人足够的时间就能掌握所有的知识，那么问题的关键就变成了时间，时间的合理利用对于任何知识工作者来说才是至关重要的。&lt;/p&gt;
+
+&lt;h2 id=&quot;section-3&quot;&gt;一些发散&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;algorithm的知识是廉价的，heuristic知识是真正最有价值的，那么algorithm的掌握就不如heuristic来得重要？不见得吧，一个一个独立的algorithm可能不那么重要，但是许许多多相关的组成一个知识网络的时候重要性不见得就比heuristic差吧，我觉得可能更重要，因为大部分的heuristic的获得其实是需要有相当可观的algorithm来做支撑的。&lt;/li&gt;
+  &lt;li&gt;既然时间是宝贵的，注定了一人不可能掌握所有的知识，那么为什么不将工作细分，相比于花一个月的时间去学习，不如花一天来请教别人。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.jianshu.com/p/af75879bbb23&quot;&gt;学习的逻辑: 知识经济学&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sun, 28 Feb 2016 00:00:00 +0800</pubDate>
+        <link>https://cdumper.github.io/blog/study/digestion/Knowledge-Inflation/</link>
+        <guid isPermaLink="true">https://cdumper.github.io/blog/study/digestion/Knowledge-Inflation/</guid>
       </item>
-    {% endfor %}
+    
+      <item>
+        <title>Docker in Practice</title>
+        <description>&lt;h2 id=&quot;docker-in-practice&quot;&gt;Docker in practice&lt;/h2&gt;
+&lt;p&gt;###Running public images
+	docker run hello-world
+&lt;strong&gt;A container is a stripped-to-basics version of a Linux operating system. An image is software you load into a container. When you ran the command, the Docker software:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;checked to see if you had the &lt;code class=&quot;highlighter-rouge&quot;&gt;hello-world&lt;/code&gt; software image&lt;/li&gt;
+  &lt;li&gt;downloaded the image from the &lt;a href=&quot;https://hub.docker.com/&quot;&gt;Docker Hub&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;loaded the image into the container and “ran” it&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;build-your-own-image&quot;&gt;Build your own image&lt;/h3&gt;
+&lt;p&gt;####Step 1 : Write a Dockrfile
+	A Dockerfile describes the software that is “baked” into an image.
+	It isn’t just ingredients tho, it can tell the software what environment to use or what commands to run.&lt;/p&gt;
+
+&lt;p&gt;The &lt;code class=&quot;highlighter-rouge&quot;&gt;FROM&lt;/code&gt; keyword tells Docker which image your image is based on. You are basing your new work on the existing &lt;code class=&quot;highlighter-rouge&quot;&gt;whalesay&lt;/code&gt; image. &lt;code class=&quot;highlighter-rouge&quot;&gt;FROM docker/whalesay:latest&lt;/code&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;step-2--build-an-image-from-your-dockerfile&quot;&gt;Step 2 : Build an image from your Dockerfile&lt;/h4&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;docker build -t docker-whale . The `docker build -t docker-whale .` command takes the `Dockerfile` in the current directory, and builds an image called `docker-whale` on your local machine
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;cheat-sheet&quot;&gt;Cheat sheet&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Create a new docker vm:
+&lt;code class=&quot;highlighter-rouge&quot;&gt;docker-machine create --driver virtualbox default&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;List docker machines:
+&lt;code class=&quot;highlighter-rouge&quot;&gt;docker-machine ls&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Get the environment commands for VM:
+&lt;code class=&quot;highlighter-rouge&quot;&gt;docker-machine env default&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Connect shell to the machine:
+&lt;code class=&quot;highlighter-rouge&quot;&gt;eval &quot;$(docker-machine env default)&quot;&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Start an NGINX container on the DOCKER_HOST:
+&lt;code class=&quot;highlighter-rouge&quot;&gt;docker run -d -P --name web nginx&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Display your running container:
+&lt;code class=&quot;highlighter-rouge&quot;&gt;docker ps&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;View just the container’s ports:
+&lt;code class=&quot;highlighter-rouge&quot;&gt;docker ps web&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Get the address of the default VM:
+&lt;code class=&quot;highlighter-rouge&quot;&gt;docker-machine ip default&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;To stop running container:
+&lt;code class=&quot;highlighter-rouge&quot;&gt;docker stop web&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;To remove container:
+&lt;code class=&quot;highlighter-rouge&quot;&gt;docker rm web&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Mon, 11 Jan 2016 00:00:00 +0800</pubDate>
+        <link>https://cdumper.github.io/blog/study/docker/Docker-in-practice/</link>
+        <guid isPermaLink="true">https://cdumper.github.io/blog/study/docker/Docker-in-practice/</guid>
+      </item>
+    
+      <item>
+        <title>Docker Theoretical</title>
+        <description>&lt;h2 id=&quot;docker-theoratical&quot;&gt;Docker Theoratical&lt;/h2&gt;
+&lt;p&gt;Docker是一个轻量级虚拟化技术。
+除了基于Docker技术解决构建分布式平台无法回避的经典问题，docker及其生态系统主要带来了以下几点好处：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;持续部署与测试&lt;/li&gt;
+  &lt;li&gt;跨云平台支持&lt;/li&gt;
+  &lt;li&gt;环境标准化和版本控制&lt;/li&gt;
+  &lt;li&gt;搞资源利用率与隔离&lt;/li&gt;
+  &lt;li&gt;容器跨平台性与镜像&lt;/li&gt;
+  &lt;li&gt;易于理解和易用&lt;/li&gt;
+  &lt;li&gt;应用镜像仓库&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Sun, 13 Dec 2015 00:00:00 +0800</pubDate>
+        <link>https://cdumper.github.io/blog/study/docker/Docker-Theoretical/</link>
+        <guid isPermaLink="true">https://cdumper.github.io/blog/study/docker/Docker-Theoretical/</guid>
+      </item>
+    
+      <item>
+        <title>Groovy</title>
+        <description>&lt;h2 id=&quot;groovy&quot;&gt;Groovy&lt;/h2&gt;
+
+&lt;h3 id=&quot;syntax&quot;&gt;Syntax&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Strings&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;single quoted string&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;single line plain string&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;double quoted string&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;support string interpolation&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;triple quoted string&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;multiple line plain string&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;```groovy
+def number = 1
+def eagerGString = “value == ${number}”
+def lazyGString = “value == ${ -&amp;gt; number}”&lt;/p&gt;
+
+&lt;p&gt;assert eagerGString == “value == 1”
+assert lazyGString == “value == 1”&lt;/p&gt;
+
+&lt;p&gt;number = 2&lt;/p&gt;
+
+&lt;p&gt;assert eagerGString == “value == 1”
+assert lazyGString == “value == 2”
+```&lt;/p&gt;
+</description>
+        <pubDate>Mon, 30 Nov 2015 00:00:00 +0800</pubDate>
+        <link>https://cdumper.github.io/blog/study/groovy/Groovy/</link>
+        <guid isPermaLink="true">https://cdumper.github.io/blog/study/groovy/Groovy/</guid>
+      </item>
+    
+      <item>
+        <title>This is a test post in thoughts</title>
+        <description>&lt;div class=&quot;row&quot;&gt;
+&lt;div class=&quot;medium-4 medium-push-8 columns&quot;&gt;
+    &lt;div class=&quot;panel radius&quot;&gt;
+      &lt;p id=&quot;toc&quot;&gt;&lt;strong&gt;Table of Contents&lt;/strong&gt;&lt;/p&gt;
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#lato--a-sans-serif-typeface-family&quot; id=&quot;markdown-toc-lato--a-sans-serif-typeface-family&quot;&gt;Lato – A Sans Serif Typeface Family&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;&lt;!-- /.medium-4.columns --&gt;
+
+
+
+&lt;div class=&quot;medium-8 medium-pull-4 columns&quot;&gt;
+
+    &lt;h2 id=&quot;lato--a-sans-serif-typeface-family&quot;&gt;Lato – A Sans Serif Typeface Family&lt;/h2&gt;
+
+    &lt;p&gt;[Lato][4] is a sans serif typeface family started in the summer of 2010 by Warsaw-based designer Łukasz Dziedzic. »Lato« means »Summer« in Polish. In December 2010 the Lato family was published under the Open Font License by his foundry tyPoland, with support from Google.&lt;/p&gt;
+
+    &lt;blockquote&gt;
+      &lt;p&gt;&lt;span class=&quot;teaser&quot;&gt;I do not think of type as something that should be readable. It should be beautiful.&lt;/span&gt;&lt;cite&gt;[Ed Benguiat][3]&lt;/cite&gt;&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/div&gt;&lt;/div&gt;
+</description>
+        <pubDate>Mon, 16 Nov 2015 00:00:00 +0800</pubDate>
+        <link>https://cdumper.github.io/blog/thoughts/typography/</link>
+        <guid isPermaLink="true">https://cdumper.github.io/blog/thoughts/typography/</guid>
+      </item>
+    
+      <item>
+        <title>This is a test post in Studying Room</title>
+        <description>&lt;div class=&quot;row&quot;&gt;
+&lt;div class=&quot;medium-4 medium-push-8 columns&quot;&gt;
+    &lt;div class=&quot;panel radius&quot;&gt;
+      &lt;p id=&quot;toc&quot;&gt;&lt;strong&gt;Table of Contents&lt;/strong&gt;&lt;/p&gt;
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#lato--a-sans-serif-typeface-family&quot; id=&quot;markdown-toc-lato--a-sans-serif-typeface-family&quot;&gt;Lato – A Sans Serif Typeface Family&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;&lt;!-- /.medium-4.columns --&gt;
+
+
+
+&lt;div class=&quot;medium-8 medium-pull-4 columns&quot;&gt;
+
+    &lt;h2 id=&quot;lato--a-sans-serif-typeface-family&quot;&gt;Lato – A Sans Serif Typeface Family&lt;/h2&gt;
+
+    &lt;p&gt;[Lato][4] is a sans serif typeface family started in the summer of 2010 by Warsaw-based designer Łukasz Dziedzic. »Lato« means »Summer« in Polish. In December 2010 the Lato family was published under the Open Font License by his foundry tyPoland, with support from Google.&lt;/p&gt;
+
+    &lt;blockquote&gt;
+      &lt;p&gt;&lt;span class=&quot;teaser&quot;&gt;I do not think of type as something that should be readable. It should be beautiful.&lt;/span&gt;&lt;cite&gt;[Ed Benguiat][3]&lt;/cite&gt;&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/div&gt;&lt;/div&gt;
+</description>
+        <pubDate>Mon, 16 Nov 2015 00:00:00 +0800</pubDate>
+        <link>https://cdumper.github.io/blog/study/typography/</link>
+        <guid isPermaLink="true">https://cdumper.github.io/blog/study/typography/</guid>
+      </item>
+    
+      <item>
+        <title>Wonderful Typography</title>
+        <description>&lt;div class=&quot;row&quot;&gt;
+&lt;div class=&quot;medium-4 medium-push-8 columns&quot;&gt;
+    &lt;div class=&quot;panel radius&quot;&gt;
+      &lt;p id=&quot;toc&quot;&gt;&lt;strong&gt;Table of Contents&lt;/strong&gt;&lt;/p&gt;
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#lato--a-sans-serif-typeface-family&quot; id=&quot;markdown-toc-lato--a-sans-serif-typeface-family&quot;&gt;Lato – A Sans Serif Typeface Family&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#about-volkhov-lth2gt&quot; id=&quot;markdown-toc-about-volkhov-lth2gt&quot;&gt;About Volkhov &amp;lt;h2&amp;gt;&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#feeling-responsive-uses-volkhov-for--lth3gt&quot; id=&quot;markdown-toc-feeling-responsive-uses-volkhov-for--lth3gt&quot;&gt;Feeling Responsive uses Volkhov for…  &amp;lt;h3&amp;gt;&lt;/a&gt;        &lt;ul&gt;
+          &lt;li&gt;&lt;a href=&quot;#heading-in-volkhov-lth4gt&quot; id=&quot;markdown-toc-heading-in-volkhov-lth4gt&quot;&gt;Heading in Volkhov &amp;lt;h4&amp;gt;&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#heading-in-volkhov-lth5gt&quot; id=&quot;markdown-toc-heading-in-volkhov-lth5gt&quot;&gt;Heading in Volkhov &amp;lt;h5&amp;gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#modular-scale&quot; id=&quot;markdown-toc-modular-scale&quot;&gt;Modular Scale&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#typographical-elements&quot; id=&quot;markdown-toc-typographical-elements&quot;&gt;Typographical Elements&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#lthrgt-horizontal-line&quot; id=&quot;markdown-toc-lthrgt-horizontal-line&quot;&gt;&amp;lt;hr&amp;gt; Horizontal Line&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#ltpregt-displaying-code&quot; id=&quot;markdown-toc-ltpregt-displaying-code&quot;&gt;&amp;lt;pre&amp;gt; Displaying Code&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#ltblockquotegt-quotation&quot; id=&quot;markdown-toc-ltblockquotegt-quotation&quot;&gt;&amp;lt;blockquote&amp;gt; Quotation&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#ltblockquotegt-and-ltcitegt--together&quot; id=&quot;markdown-toc-ltblockquotegt-and-ltcitegt--together&quot;&gt;&amp;lt;blockquote&amp;gt; and &amp;lt;cite&amp;gt;  together&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#ltolgt-ordered-lists&quot; id=&quot;markdown-toc-ltolgt-ordered-lists&quot;&gt;&amp;lt;ol&amp;gt; Ordered Lists&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#ltulgt-unordered-lists&quot; id=&quot;markdown-toc-ltulgt-unordered-lists&quot;&gt;&amp;lt;ul&amp;gt; Unordered Lists&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#ltdlgt-definition-lists&quot; id=&quot;markdown-toc-ltdlgt-definition-lists&quot;&gt;&amp;lt;dl&amp;gt; Definition Lists&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#ltagt&quot; id=&quot;markdown-toc-ltagt&quot;&gt;&amp;lt;a&amp;gt;&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#ltemgt&quot; id=&quot;markdown-toc-ltemgt&quot;&gt;&amp;lt;em&amp;gt;&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#ltstronggt&quot; id=&quot;markdown-toc-ltstronggt&quot;&gt;&amp;lt;strong&amp;gt;&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#ltsmallgt&quot; id=&quot;markdown-toc-ltsmallgt&quot;&gt;&amp;lt;small&amp;gt;&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#ltsgt&quot; id=&quot;markdown-toc-ltsgt&quot;&gt;&amp;lt;s&amp;gt;&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#ltcitegt&quot; id=&quot;markdown-toc-ltcitegt&quot;&gt;&amp;lt;cite&amp;gt;&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#ltqgt&quot; id=&quot;markdown-toc-ltqgt&quot;&gt;&amp;lt;q&amp;gt;&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#ltdfngt&quot; id=&quot;markdown-toc-ltdfngt&quot;&gt;&amp;lt;dfn&amp;gt;&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#ltabbrgt&quot; id=&quot;markdown-toc-ltabbrgt&quot;&gt;&amp;lt;abbr&amp;gt;&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#lttimegt&quot; id=&quot;markdown-toc-lttimegt&quot;&gt;&amp;lt;time&amp;gt;&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#ltcodegt&quot; id=&quot;markdown-toc-ltcodegt&quot;&gt;&amp;lt;code&amp;gt;&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#ltvargt&quot; id=&quot;markdown-toc-ltvargt&quot;&gt;&amp;lt;var&amp;gt;&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#ltsampgt&quot; id=&quot;markdown-toc-ltsampgt&quot;&gt;&amp;lt;samp&amp;gt;&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#ltkbdgt&quot; id=&quot;markdown-toc-ltkbdgt&quot;&gt;&amp;lt;kbd&amp;gt;&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#ltsubgt&quot; id=&quot;markdown-toc-ltsubgt&quot;&gt;&amp;lt;sub&amp;gt;&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#ltsupgt&quot; id=&quot;markdown-toc-ltsupgt&quot;&gt;&amp;lt;sup&amp;gt;&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#ltigt&quot; id=&quot;markdown-toc-ltigt&quot;&gt;&amp;lt;i&amp;gt;&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#ltbgt&quot; id=&quot;markdown-toc-ltbgt&quot;&gt;&amp;lt;b&amp;gt;&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#ltugt&quot; id=&quot;markdown-toc-ltugt&quot;&gt;&amp;lt;u&amp;gt;&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#ltmarkgt&quot; id=&quot;markdown-toc-ltmarkgt&quot;&gt;&amp;lt;mark&amp;gt;&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#ltbrgt&quot; id=&quot;markdown-toc-ltbrgt&quot;&gt;&amp;lt;br&amp;gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#footnotes&quot; id=&quot;markdown-toc-footnotes&quot;&gt;Footnotes&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#lth1gt-heading-in-volkhov&quot; id=&quot;markdown-toc-lth1gt-heading-in-volkhov&quot;&gt;&amp;lt;h1&amp;gt;-Heading in Volkhov&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#lth2gt-heading-in-volkhov&quot; id=&quot;markdown-toc-lth2gt-heading-in-volkhov&quot;&gt;&amp;lt;h2&amp;gt;-Heading in Volkhov&lt;/a&gt;        &lt;ul&gt;
+          &lt;li&gt;&lt;a href=&quot;#lth3gt-heading-in-volkhov&quot; id=&quot;markdown-toc-lth3gt-heading-in-volkhov&quot;&gt;&amp;lt;h3&amp;gt;-Heading in Volkhov&lt;/a&gt;            &lt;ul&gt;
+              &lt;li&gt;&lt;a href=&quot;#lth4gt-heading-in-volkhov&quot; id=&quot;markdown-toc-lth4gt-heading-in-volkhov&quot;&gt;&amp;lt;h4&amp;gt;-Heading in Volkhov&lt;/a&gt;                &lt;ul&gt;
+                  &lt;li&gt;&lt;a href=&quot;#lth5gt-heading-in-volkhov&quot; id=&quot;markdown-toc-lth5gt-heading-in-volkhov&quot;&gt;&amp;lt;h5&amp;gt;-Heading in Volkhov&lt;/a&gt;&lt;/li&gt;
+                  &lt;li&gt;&lt;a href=&quot;#lth6gt-heading-in-volkhov&quot; id=&quot;markdown-toc-lth6gt-heading-in-volkhov&quot;&gt;&amp;lt;h6&amp;gt;-Heading in Volkhov&lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+              &lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#tables&quot; id=&quot;markdown-toc-tables&quot;&gt;Tables&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;&lt;!-- /.medium-4.columns --&gt;
+
+
+
+&lt;div class=&quot;medium-8 medium-pull-4 columns&quot;&gt;
+
+    &lt;h2 id=&quot;lato--a-sans-serif-typeface-family&quot;&gt;Lato – A Sans Serif Typeface Family&lt;/h2&gt;
+
+    &lt;p&gt;&lt;a href=&quot;https://www.google.com/fonts/specimen/Lato&quot;&gt;Lato&lt;/a&gt; is a sans serif typeface family started in the summer of 2010 by Warsaw-based designer Łukasz Dziedzic. »Lato« means »Summer« in Polish. In December 2010 the Lato family was published under the Open Font License by his foundry tyPoland, with support from Google.&lt;/p&gt;
+
+    &lt;blockquote&gt;
+      &lt;p&gt;&lt;span class=&quot;teaser&quot;&gt;I do not think of type as something that should be readable. It should be beautiful.&lt;/span&gt;&lt;cite&gt;&lt;a href=&quot;http://en.wikipedia.org/wiki/Ed_Benguiat&quot;&gt;Ed Benguiat&lt;/a&gt;&lt;/cite&gt;&lt;/p&gt;
+    &lt;/blockquote&gt;
+
+    &lt;p&gt;In the last ten or so years, during which Łukasz has been designing type, most of his projects were rooted in a particular design task that he needed to solve. With Lato, it was no different. Originally, the family was conceived as a set of corporate fonts for a large client — who in the end decided to go in different stylistic direction, so the family became available for a public release.&lt;/p&gt;
+
+    &lt;p&gt;When working on Lato, Łukasz tried to carefully balance some potentially conflicting priorities. He wanted to create a typeface that would seem quite “transparent” when used in body text but would display some original traits when used in larger sizes. He used classical proportions (particularly visible in the uppercase) to give the letterforms familiar harmony and elegance. At the same time, he created a sleek sans serif look, which makes evident the fact that Lato was designed in 2010 — even though it does not follow any current trend.&lt;/p&gt;
+
+    &lt;p&gt;The semi-rounded details of the letters give Lato a feeling of warmth, while the strong structure provides stability and seriousness. “Male and female, serious but friendly. With the feeling of the Summer,” says Łukasz. Learn more at &lt;a href=&quot;http://www.latofonts.com/&quot;&gt;www.latofonts.com&lt;/a&gt;&lt;/p&gt;
+
+    &lt;h2 id=&quot;about-volkhov-lth2gt&quot;&gt;About Volkhov &amp;lt;h2&amp;gt;&lt;/h2&gt;
+
+    &lt;p&gt;Volkhov is a low-contrast seriffed typeface with a robust character, intended for providing a motivating reading experience. Volkhov was designed by Ivan Petrov.&lt;/p&gt;
+
+    &lt;h3 id=&quot;feeling-responsive-uses-volkhov-for--lth3gt&quot;&gt;Feeling Responsive uses Volkhov for…  &amp;lt;h3&amp;gt;&lt;/h3&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;&amp;lt;h1&amp;gt;-headings&lt;/li&gt;
+      &lt;li&gt;&amp;lt;h2&amp;gt;-headings&lt;/li&gt;
+      &lt;li&gt;&amp;lt;h3&amp;gt;-headings&lt;/li&gt;
+      &lt;li&gt;&amp;lt;h4&amp;gt;-headings&lt;/li&gt;
+      &lt;li&gt;&amp;lt;h5&amp;gt;-headings&lt;/li&gt;
+      &lt;li&gt;&amp;lt;h6&amp;gt;-headings&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;h4 id=&quot;heading-in-volkhov-lth4gt&quot;&gt;Heading in Volkhov &amp;lt;h4&amp;gt;&lt;/h4&gt;
+
+    &lt;p&gt;As a four-weight family it is well-suited for complex text environments being economic and legible, contemporary and prominent. Many of its design solutions relate to this purpose: large open counters, rather short descenders, and brutal asymmetric serifs.&lt;/p&gt;
+
+    &lt;h4 id=&quot;heading-in-volkhov-lth5gt&quot;&gt;Heading in Volkhov &amp;lt;h5&amp;gt;&lt;/h4&gt;
+
+    &lt;p&gt;Spacing in Bold is slightly increased compared to the normal weight, because the bold mass is mostly grown inwards. The Italic has a steep angle and a distinctive calligraphically reminiscent character, as a counterpart to the rigorous Regular.&lt;/p&gt;
+
+    &lt;h2 id=&quot;modular-scale&quot;&gt;Modular Scale&lt;/h2&gt;
+
+    &lt;p&gt;&lt;em&gt;Feeling Responsive&lt;/em&gt; explores the &lt;em&gt;2:3 perfect fifth&lt;/em&gt; modular scale created with &lt;a href=&quot;http://modularscale.com/&quot;&gt;www.modular-scale.com&lt;/a&gt;. This is the modular scale of  &lt;em&gt;Feeling Responsive&lt;/em&gt;.&lt;/p&gt;
+
+    &lt;p&gt;44px @ 1:1.5 – Ideal text size&lt;br /&gt;
+16px @ 1:1.5 – Important number&lt;/p&gt;
+
+    &lt;table&gt;
+      &lt;thead&gt;
+        &lt;tr&gt;
+          &lt;th&gt;Modular Scale&lt;/th&gt;
+          &lt;th&gt; &lt;/th&gt;
+          &lt;th&gt; &lt;/th&gt;
+          &lt;th&gt; &lt;/th&gt;
+        &lt;/tr&gt;
+      &lt;/thead&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td&gt;44.000&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt;2.75&lt;/td&gt;
+          &lt;td&gt;338.462&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;36.000&lt;/td&gt;
+          &lt;td&gt;0.818&lt;/td&gt;
+          &lt;td&gt;2.25&lt;/td&gt;
+          &lt;td&gt;276.923&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;29.333&lt;/td&gt;
+          &lt;td&gt;0.667&lt;/td&gt;
+          &lt;td&gt;1.833&lt;/td&gt;
+          &lt;td&gt;225.638&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;24.000&lt;/td&gt;
+          &lt;td&gt;0.545&lt;/td&gt;
+          &lt;td&gt;1.5&lt;/td&gt;
+          &lt;td&gt;184.615&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;19.555&lt;/td&gt;
+          &lt;td&gt;0.444&lt;/td&gt;
+          &lt;td&gt;1.222&lt;/td&gt;
+          &lt;td&gt;150.423&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;16.000&lt;/td&gt;
+          &lt;td&gt;0.364&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt;123.077&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+
+    &lt;h2 class=&quot;t60&quot; id=&quot;typographical-elements&quot;&gt;Typographical Elements&lt;/h2&gt;
+
+    &lt;p&gt;Here you’ll find the &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5/HTML5_element_list&quot;&gt;complete list of HTML5-Tags&lt;/a&gt; and this is how they look like.&lt;/p&gt;
+
+    &lt;h3 id=&quot;lthrgt-horizontal-line&quot;&gt;&amp;lt;hr&amp;gt; Horizontal Line&lt;/h3&gt;
+    &lt;hr /&gt;
+
+    &lt;h3 id=&quot;ltpregt-displaying-code&quot;&gt;&amp;lt;pre&amp;gt; Displaying Code&lt;/h3&gt;
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;html&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;head&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;title&amp;gt;&lt;/span&gt;Code Blocks&lt;span class=&quot;nt&quot;&gt;&amp;lt;/title&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/head&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;body&amp;gt;&amp;lt;/body&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+
+    &lt;h3 id=&quot;ltblockquotegt-quotation&quot;&gt;&amp;lt;blockquote&amp;gt; Quotation&lt;/h3&gt;
+    &lt;blockquote&gt;Everything happens for a reason. (Britney Spears)&lt;/blockquote&gt;
+
+    &lt;h3 id=&quot;ltblockquotegt-and-ltcitegt--together&quot;&gt;&amp;lt;blockquote&amp;gt; and &amp;lt;cite&amp;gt;  together&lt;/h3&gt;
+
+    &lt;blockquote&gt;
+      &lt;p&gt;Age is an issue of mind over matter. If you don’t mind, it doesn’t matter.
+&lt;cite&gt;Mark Twain&lt;/cite&gt;&lt;/p&gt;
+    &lt;/blockquote&gt;
+
+    &lt;h3 id=&quot;ltolgt-ordered-lists&quot;&gt;&amp;lt;ol&amp;gt; Ordered Lists&lt;/h3&gt;
+
+    &lt;ol&gt;
+      &lt;li&gt;Ordered List&lt;/li&gt;
+      &lt;li&gt;Second List Item&lt;/li&gt;
+      &lt;li&gt;Third List Item
+        &lt;ol&gt;
+          &lt;li&gt;Second Level First Item&lt;/li&gt;
+          &lt;li&gt;Second Level Second Item&lt;/li&gt;
+          &lt;li&gt;Second Level Third Item
+            &lt;ol&gt;
+              &lt;li&gt;And a third level First Item&lt;/li&gt;
+              &lt;li&gt;And a third level Second Item&lt;/li&gt;
+              &lt;li&gt;And a third level Third Item&lt;/li&gt;
+            &lt;/ol&gt;
+          &lt;/li&gt;
+        &lt;/ol&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Fourth List Item&lt;/li&gt;
+      &lt;li&gt;Fifth List Item&lt;/li&gt;
+    &lt;/ol&gt;
+
+    &lt;h3 id=&quot;ltulgt-unordered-lists&quot;&gt;&amp;lt;ul&amp;gt; Unordered Lists&lt;/h3&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;Unordered List&lt;/li&gt;
+      &lt;li&gt;Second List Item&lt;/li&gt;
+      &lt;li&gt;Third List Item
+        &lt;ul&gt;
+          &lt;li&gt;Second Level First Item&lt;/li&gt;
+          &lt;li&gt;Second Level Second Item&lt;/li&gt;
+          &lt;li&gt;Second Level Third Item
+            &lt;ul&gt;
+              &lt;li&gt;And a third level First Item&lt;/li&gt;
+              &lt;li&gt;And a third level Second Item&lt;/li&gt;
+              &lt;li&gt;And a third level Third Item&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Fourth List Item&lt;/li&gt;
+      &lt;li&gt;Fifth List Item&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;h3 id=&quot;ltdlgt-definition-lists&quot;&gt;&amp;lt;dl&amp;gt; Definition Lists&lt;/h3&gt;
+
+    &lt;dl&gt;
+      &lt;dt&gt;Definition List&lt;/dt&gt;
+      &lt;dd&gt;Bacon ipsum dolor sit amet spare ribs brisket ribeye, andouille sirloin bresaola frankfurter corned beef capicola bacon. Salami beef ribs sirloin, short loin hamburger shoulder t-bone.&lt;/dd&gt;
+      &lt;dt&gt;Beef ribs jowl swine porchetta&lt;/dt&gt;
+      &lt;dd&gt;Sirloin tenderloin swine frankfurter pork loin pork capicola ham hock strip steak ribeye beef ribs. Hamburger t-bone ribeye ham prosciutto bresaola.&lt;/dd&gt;
+      &lt;dt&gt;Pancetta flank sirloin pork&lt;/dt&gt;
+      &lt;dd&gt;short ribs shankle prosciutto landjaeger. Beef ribs turkey shoulder drumstick. Leberkas pork belly ribeye, bresaola jerky strip steak tenderloin bacon landjaeger short ribs beef ribs. Flank pork chop fatback tail kielbasa filet mignon jowl landjaeger bresaola tongue corned beef biltong.&lt;/dd&gt;
+      &lt;dd&gt;Landjaeger spare ribs fatback corned beef tenderloin drumstick, swine chicken beef turkey biltong doner tri-tip filet mignon.&lt;/dd&gt;
+    &lt;/dl&gt;
+
+    &lt;h3 id=&quot;ltagt&quot;&gt;&amp;lt;a&amp;gt;&lt;/h3&gt;
+    &lt;p&gt;&lt;a href=&quot;http://phlow.de/&quot;&gt;Links&lt;/a&gt; make the web exceptional.&lt;/p&gt;
+
+    &lt;h3 id=&quot;ltemgt&quot;&gt;&amp;lt;em&amp;gt;&lt;/h3&gt;
+    &lt;p&gt;Let’s &lt;em&gt;emphasize&lt;/em&gt; how important responsive webdesign is.&lt;/p&gt;
+
+    &lt;h3 id=&quot;ltstronggt&quot;&gt;&amp;lt;strong&amp;gt;&lt;/h3&gt;
+    &lt;p&gt;This looks like &lt;strong&gt;bold&lt;/strong&gt; text.&lt;/p&gt;
+
+    &lt;h3 id=&quot;ltsmallgt&quot;&gt;&amp;lt;small&amp;gt;&lt;/h3&gt;
+    &lt;p&gt;&lt;small&gt;This is small text.&lt;/small&gt;&lt;/p&gt;
+
+    &lt;h3 id=&quot;ltsgt&quot;&gt;&amp;lt;s&amp;gt;&lt;/h3&gt;
+
+    &lt;p&gt;It’s nice getting things done. Just strike through &lt;s&gt;finished tasks&lt;/s&gt;.&lt;/p&gt;
+
+    &lt;h3 id=&quot;ltcitegt&quot;&gt;&amp;lt;cite&amp;gt;&lt;/h3&gt;
+
+    &lt;p&gt;&lt;cite&gt;Albert Einstein&lt;/cite&gt;&lt;/p&gt;
+
+    &lt;h3 id=&quot;ltqgt&quot;&gt;&amp;lt;q&amp;gt;&lt;/h3&gt;
+
+    &lt;p&gt;If you use &amp;lt;q&amp;gt; your text gets &lt;q&gt;automagically quotes around the text passage&lt;/q&gt;.&lt;/p&gt;
+
+    &lt;h3 id=&quot;ltdfngt&quot;&gt;&amp;lt;dfn&amp;gt;&lt;/h3&gt;
+
+    &lt;p&gt;The &amp;lt;dfn&amp;gt; tag is a phrase tag. It defines a &lt;dfn&gt;definition term&lt;/dfn&gt;.&lt;/p&gt;
+
+    &lt;h3 id=&quot;ltabbrgt&quot;&gt;&amp;lt;abbr&amp;gt;&lt;/h3&gt;
+
+    &lt;p&gt;The &lt;abbr title=&quot;World Health Organization&quot;&gt;WHO&lt;/abbr&gt; was founded in 1948.&lt;/p&gt;
+
+    &lt;h3 id=&quot;lttimegt&quot;&gt;&amp;lt;time&amp;gt;&lt;/h3&gt;
+
+    &lt;p&gt;The concert took place on &lt;time datetime=&quot;2001-05-15 19:00&quot;&gt;May 15&lt;/time&gt;.&lt;/p&gt;
+
+    &lt;h3 id=&quot;ltcodegt&quot;&gt;&amp;lt;code&amp;gt;&lt;/h3&gt;
+
+    &lt;p&gt;Some &lt;code class=&quot;highlighter-rouge&quot;&gt;code: lucida console&lt;/code&gt; displayed.&lt;/p&gt;
+
+    &lt;h3 id=&quot;ltvargt&quot;&gt;&amp;lt;var&amp;gt;&lt;/h3&gt;
+
+    &lt;p&gt;The &amp;lt;var&amp;gt; tag is a phrase tag. It defines a &lt;var&gt;variable&lt;/var&gt;.&lt;/p&gt;
+
+    &lt;h3 id=&quot;ltsampgt&quot;&gt;&amp;lt;samp&amp;gt;&lt;/h3&gt;
+
+    &lt;p&gt;Text surrounded by &amp;lt;samp&amp;gt; &lt;samp&gt;looks like this in monospace&lt;/samp&gt;.&lt;/p&gt;
+
+    &lt;h3 id=&quot;ltkbdgt&quot;&gt;&amp;lt;kbd&amp;gt;&lt;/h3&gt;
+
+    &lt;p&gt;Copycats enjoy pressing &lt;kbd&gt;CMD&lt;/kbd&gt; + &lt;kbd&gt;c&lt;/kbd&gt; and &lt;kbd&gt;CMD&lt;/kbd&gt; + &lt;kbd&gt;v&lt;/kbd&gt;.&lt;/p&gt;
+
+    &lt;h3 id=&quot;ltsubgt&quot;&gt;&amp;lt;sub&amp;gt;&lt;/h3&gt;
+
+    &lt;p&gt;This text &lt;sub&gt;lays low&lt;/sub&gt; and chills a bit.&lt;/p&gt;
+
+    &lt;h3 id=&quot;ltsupgt&quot;&gt;&amp;lt;sup&amp;gt;&lt;/h3&gt;
+
+    &lt;p&gt;This text &lt;sup&gt;gets high&lt;/sup&gt; above the clouds.&lt;/p&gt;
+
+    &lt;h3 id=&quot;ltigt&quot;&gt;&amp;lt;i&amp;gt;&lt;/h3&gt;
+
+    &lt;p&gt;This looks &lt;i&gt;italic&lt;/i&gt;.&lt;/p&gt;
+
+    &lt;h3 id=&quot;ltbgt&quot;&gt;&amp;lt;b&amp;gt;&lt;/h3&gt;
+
+    &lt;p&gt;This looks &lt;b&gt;bold&lt;/b&gt;, too.&lt;/p&gt;
+
+    &lt;h3 id=&quot;ltugt&quot;&gt;&amp;lt;u&amp;gt;&lt;/h3&gt;
+
+    &lt;div&gt;&lt;p&gt;&lt;u&gt;Underlining&lt;/u&gt; content for emphasize is not the best choice. You can&#39;t read it so well.&lt;/p&gt;&lt;/div&gt;
+
+    &lt;h3 id=&quot;ltmarkgt&quot;&gt;&amp;lt;mark&amp;gt;&lt;/h3&gt;
+    &lt;p&gt;Let’s &lt;mark&gt;mark this hint&lt;/mark&gt; to give you a clue.&lt;/p&gt;
+
+    &lt;h3 id=&quot;ltbrgt&quot;&gt;&amp;lt;br&amp;gt;&lt;/h3&gt;
+
+    &lt;p&gt;Need a break? I give you three!&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+    &lt;h2 id=&quot;footnotes&quot;&gt;Footnotes&lt;/h2&gt;
+
+    &lt;p&gt;If you need footnotes for your posts, articles and entries, the Kramdown-Parser &lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; got you covered. How to use footnotes? Read this footnote. &lt;sup id=&quot;fnref:2&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+
+    &lt;h1 id=&quot;lth1gt-heading-in-volkhov&quot;&gt;&amp;lt;h1&amp;gt;-Heading in Volkhov&lt;/h1&gt;
+
+    &lt;h2 id=&quot;lth2gt-heading-in-volkhov&quot;&gt;&amp;lt;h2&amp;gt;-Heading in Volkhov&lt;/h2&gt;
+
+    &lt;h3 id=&quot;lth3gt-heading-in-volkhov&quot;&gt;&amp;lt;h3&amp;gt;-Heading in Volkhov&lt;/h3&gt;
+
+    &lt;h4 id=&quot;lth4gt-heading-in-volkhov&quot;&gt;&amp;lt;h4&amp;gt;-Heading in Volkhov&lt;/h4&gt;
+
+    &lt;h5 id=&quot;lth5gt-heading-in-volkhov&quot;&gt;&amp;lt;h5&amp;gt;-Heading in Volkhov&lt;/h5&gt;
+
+    &lt;h5 id=&quot;lth6gt-heading-in-volkhov&quot;&gt;&amp;lt;h6&amp;gt;-Heading in Volkhov&lt;/h5&gt;
+
+    &lt;h2 id=&quot;tables&quot;&gt;Tables&lt;/h2&gt;
+
+    &lt;p&gt;Even tables are responsive thanks to foundation. A table can consist of these elements.&lt;/p&gt;
+
+    &lt;table&gt;
+  &lt;caption&gt;&amp;lt;table&amp;gt; defines an HTML table&lt;/caption&gt;
+  &lt;colgroup&gt;
+    &lt;col span=&quot;1&quot; style=&quot;width: 15%;&quot; /&gt;
+    &lt;col span=&quot;1&quot; style=&quot;width: 50%;&quot; /&gt;
+    &lt;col span=&quot;1&quot; style=&quot;width: 35%;&quot; /&gt;
+  &lt;/colgroup&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;HTML Tag&lt;/th&gt;
+      &lt;th&gt;Defintion&lt;/th&gt;
+      &lt;th&gt;Style&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&amp;lt;caption&amp;gt;&lt;/td&gt;
+      &lt;td&gt;defines a table caption&lt;/td&gt;
+      &lt;td&gt;&lt;code&gt;font-weight: bold;&lt;/code&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&amp;lt;colgroup&amp;gt;&lt;/td&gt;
+      &lt;td&gt;specifies a group of one or more columns in a table for 
+formatting. The &amp;lt;colgroup&amp;gt; tag is useful for applying styles to entire columns, instead of repeating the styles for each cell, for each row.&lt;/td&gt;
+      &lt;td&gt;no styling needed&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&amp;lt;col&amp;gt;&lt;/td&gt;
+      &lt;td&gt;specifies column properties for each column within a `&amp;lt;colgroup&amp;gt;` 
+element&lt;/td&gt;
+      &lt;td&gt;no styling needed&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&amp;lt;thead&amp;gt;&lt;/td&gt;
+      &lt;td&gt;is used to group header content in an HTML table&lt;/td&gt;
+      &lt;td&gt;&lt;code&gt;font-weight: bold;&lt;/code&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&amp;lt;tbody&amp;gt;&lt;/td&gt;
+      &lt;td&gt;is used to group the body content in an HTML table&lt;/td&gt;
+      &lt;td&gt;no styling needed&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&amp;lt;tr&amp;gt;&lt;/td&gt;
+      &lt;td&gt;defines a row in an HTML table&lt;/td&gt;
+      &lt;td&gt;no styling needed&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&amp;lt;th&amp;gt;&lt;/td&gt;
+      &lt;td&gt;defines a header cell in an HTML table&lt;/td&gt;
+      &lt;td&gt;&lt;code&gt;font-weight: bold;&lt;/code&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&amp;lt;td&amp;gt;&lt;/td&gt;
+      &lt;td&gt;defines a standard cell in an HTML table&lt;/td&gt;
+      &lt;td&gt;&lt;code&gt;font-weight: normal;&lt;/code&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&amp;lt;tfoot&amp;gt;&lt;/td&gt;
+      &lt;td&gt;is used to group footer content in an HTML table&lt;/td&gt;
+      &lt;td&gt;no styling needed&lt;/td&gt;
+    &lt;/tr&gt;
+
+
+
+
+
+
+
+
+&lt;!-- /.medium-8.columns --&gt;
+&lt;!-- /.row --&gt;
+
+
+&lt;/tbody&gt;&lt;/table&gt;
+  &lt;/div&gt;&lt;/div&gt;
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot;&gt;
+      &lt;p&gt;Find out more about Kramdown on &lt;a href=&quot;http://kramdown.gettalong.org/&quot;&gt;http://kramdown.gettalong.org/&lt;/a&gt; &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:2&quot;&gt;
+      &lt;p&gt;Kramdown has an excellent documentation of all its features. Check out, on how to &lt;a href=&quot;http://kramdown.gettalong.org/syntax.html#footnotes&quot;&gt;footnotes&lt;/a&gt;. &lt;a href=&quot;#fnref:2&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Mon, 16 Nov 2015 00:00:00 +0800</pubDate>
+        <link>https://cdumper.github.io/blog/design/typography/</link>
+        <guid isPermaLink="true">https://cdumper.github.io/blog/design/typography/</guid>
+      </item>
+    
+      <item>
+        <title>Now with Comments!</title>
+        <description>&lt;p&gt;If you want to use Disqus-Comments with &lt;em&gt;Feeling Responsive&lt;/em&gt;, just open &lt;code class=&quot;highlighter-rouge&quot;&gt;config.yml&lt;/code&gt; and add your &lt;code class=&quot;highlighter-rouge&quot;&gt;disqus_shortname&lt;/code&gt;. &lt;a href=&quot;https://disqus.com/websites/&quot;&gt;More on how to use Disqus ›&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;By default comments are turned off. You can customize the default behaviour in &lt;code class=&quot;highlighter-rouge&quot;&gt;config.yml&lt;/code&gt;. To &lt;strong&gt;turn on comments&lt;/strong&gt; just add &lt;code class=&quot;highlighter-rouge&quot;&gt;comments: true&lt;/code&gt; to front matter using the page layout &lt;code class=&quot;highlighter-rouge&quot;&gt;layout: page&lt;/code&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Sun, 15 Nov 2015 00:00:00 +0800</pubDate>
+        <link>https://cdumper.github.io/blog/experience/comments/</link>
+        <guid isPermaLink="true">https://cdumper.github.io/blog/experience/comments/</guid>
+      </item>
+    
+      <item>
+        <title>Now with Comments!</title>
+        <description>&lt;p&gt;If you want to use Disqus-Comments with &lt;em&gt;Feeling Responsive&lt;/em&gt;, just open &lt;code class=&quot;highlighter-rouge&quot;&gt;config.yml&lt;/code&gt; and add your &lt;code class=&quot;highlighter-rouge&quot;&gt;disqus_shortname&lt;/code&gt;. &lt;a href=&quot;https://disqus.com/websites/&quot;&gt;More on how to use Disqus ›&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;By default comments are turned off. You can customize the default behaviour in &lt;code class=&quot;highlighter-rouge&quot;&gt;config.yml&lt;/code&gt;. To &lt;strong&gt;turn on comments&lt;/strong&gt; just add &lt;code class=&quot;highlighter-rouge&quot;&gt;comments: true&lt;/code&gt; to front matter using the page layout &lt;code class=&quot;highlighter-rouge&quot;&gt;layout: page&lt;/code&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Sun, 15 Nov 2015 00:00:00 +0800</pubDate>
+        <link>https://cdumper.github.io/blog/design/comments/</link>
+        <guid isPermaLink="true">https://cdumper.github.io/blog/design/comments/</guid>
+      </item>
+    
+      <item>
+        <title>Dummy Stub Fake Mock</title>
+        <description>&lt;h1 id=&quot;dummy-stub-fake-mock&quot;&gt;Dummy Stub Fake Mock&lt;/h1&gt;
+
+&lt;h3 id=&quot;dummy&quot;&gt;Dummy&lt;/h3&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;An object that is passed around but never used. Typically used to fulfill the parameter list of a method&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;stub&quot;&gt;Stub&lt;/h3&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;An object that always returns the same canned response. May also hold some dummy state&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;fake&quot;&gt;Fake&lt;/h3&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;An actual working implementation(not of production quality or configuration) that can replace the real implementation&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;mock&quot;&gt;Mock&lt;/h3&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;An object that represents a series of expectations and provides canned responses&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+        <pubDate>Fri, 23 Oct 2015 00:00:00 +0800</pubDate>
+        <link>https://cdumper.github.io/blog/study/Mock-in-Software-Testing/</link>
+        <guid isPermaLink="true">https://cdumper.github.io/blog/study/Mock-in-Software-Testing/</guid>
+      </item>
+    
   </channel>
 </rss>

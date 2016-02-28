@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+   
+    <title>RealJenius.com - Category: study</title>
+   
+   <link>http://realjenius.com</link>
+   <description>I'm a software developer in the game industry, and have been (for better or worse) coding on the Java platform for the last decade. I also do all my own stunts.</description>
+   <language>en-us</language>
+   <managingEditor>R.J. Lorimer</managingEditor>
+   <atom:link href="rss" rel="self" type="application/rss+xml" />
+
+    
+	  <item>
+        <title>Knowledge Inflation</title>
+        <link>http://realjenius.com/study/digestion/Knowledge-Inflation/</link>
+		<author>R.J. Lorimer</author>
+		<pubDate>2016-02-28T00:00:00+08:00</pubDate>
+		<guid>http://realjenius.com/study/digestion/Knowledge-Inflation/</guid>
+		<description><![CDATA[
+		   <h2 id="section">怎样让自己的知识保值</h2>
+
+<p>晚上有空仔细读了一遍前公司大牛李光磊的一个系列文章，主题是知识经济学。文章由目前知识膨胀的大背景引发出了一系列的思考。</p>
+
+<p>所谓知识膨胀就是知识正在被以远超过知识工作者能消化能力的速度制造出来，罪魁祸首无疑使互联网。一个直观的例子就是凡事问谷歌就好了，不管是做一道菜还是养鱼养花甚至是怎样拿lego做出摩天大楼，这些通通都可以通过搜索引擎找到答案。获得这些知识的成本变低了，换句话说就是知识容易被复制传播，那么必然将导致它的价值被稀释。这种情况下就得去考虑自己已获得知识的保值升值，以及对于新知识的投资。文中引入了知识漏斗的概念来解答这个问题。</p>
+
+<p>知识可以被分成三个层次，来代表我们处理知识的三个阶段：mystery，heuristic和algorithm。</p>
+
+<blockquote>
+  <p><em>mystery的知识属于__未知领域__，我们甚至无法了解这个问题本身是什么问题。典型的问题比如“如何得到最好的设计”，“怎么获得美满的婚姻”，甚至一些看上去不那么难回答的问题实际上也属于这类问题，比如“下一个客户从哪来”，“如何让业务增长十倍”。这类问题中的每个问题都是独特的问题，就好像并不是所有企业都能做大十倍，而且做大过程中的方式也不一定相同。再比如对于某个项目有效的手法，对别的项目不一定适用，都是一个道理，有时候又被称作艺术。</em></p>
+
+  <p><em>algorithm的知识属于__完全已知领域__，在这个领域没有复杂问题，所有的复杂性都被解决掉了。无论在何种环境下，按照algorithm来作，总能得到相同或者是可预期的结果。这类知识往往是像“如何列出磁盘目录”，“房贷手续是怎样的”，“在东直门哪里能买到钱包”之类的问题。对于这类知识，你知道就是知道，不知道就是不知道。较容易通过训练获得，其终极形式就是写成程序，完全不用人来作。</em></p>
+
+  <p><em>从mystery转向algorithm就需要heuristic，我如何把一个未知的问题转化为已知的algorithm，或者我是能够去除掉mystery中的复杂性用简单的algorithm来解决它。或是说，你能否把艺术工程化或者流程化，去掉其中的文艺范。推理，发散，类比等等的都是这个阶段需要的技能。大凡革命性的飞跃，都源自把mystery变成algorithm”</em></p>
+</blockquote>
+
+<p>algorithm的知识是廉价而易于获得的，真正valuable的东西是heuristic有启发的知识，例如Martin Fowler重构里的寻找bad smell，将如何改善既有代码的设计算法化。</p>
+
+<h2 id="section-1">知行合一</h2>
+<p>这是文中引申出的另一个观点，大意是<strong>人们不会知道你掌握多少知识，只会看到你表现出来了多少知识</strong>。世界上的每一个独立的人之于所有的人都是一个黑盒，别人只能够通过我们的行为来判断。因此当你掌握了某项知识的时候就应该从外在行为上表现出来，这样你的知识才发挥了价值。例如这个月每天晚上通宵达旦的学习HTML5，但是如果你没有用H5做过什么项目解决什么问题做过什么分享或者连聊天时都没有稍微深入的谈论过，那么H5对于现在的你来说就没有产生价值。这就证明了另一件事，<strong>获得知识的起点应该是基于问题而不是为了学习。反馈是学习的唯一途径。 输入只是娱乐，输出才是学习。</strong></p>
+
+<p>学习过程中<strong>不要因人废言</strong>，一句话有没有道理，跟说话的人是否是专家，没有关系。跟你是否喜欢他/她，也没有关系。<strong>易于因人废言的人，对自己也特别没信心，难以通过分享，辩论来检验自己的认知。</strong></p>
+
+<h2 id="section-2">知识工作者的工作细分是一种妥协</h2>
+<p>对于传统行业来说，分工是一个提升效率的优化措施。一个渔夫只具备打鱼的能力就能够住着坚实的房子，喝着牛奶吃着米饭，穿着精美的衣服皮鞋。他只需要把打鱼这件事做好就能用自己的成果来换取别人的。</p>
+
+<blockquote>
+  <p><em>但这一切都有个前提, 就是你可以直接应用别人的工作产物, 而不需要跟这个人交互, 也不需要关心产物是如何产生的</em></p>
+</blockquote>
+
+<p>对于知识工作者来说这一点似乎有些不现实，对于任何的知识传递都是有代价的，通常人们会通过交流沟通来弥补信息丢失。只有当一个人真的搞不定一件事的时候才会考虑分工。理论上来讲，人脑的容量近乎无穷，只要给人足够的时间就能掌握所有的知识，那么问题的关键就变成了时间，时间的合理利用对于任何知识工作者来说才是至关重要的。</p>
+
+<h2 id="section-3">一些发散</h2>
+<ul>
+  <li>algorithm的知识是廉价的，heuristic知识是真正最有价值的，那么algorithm的掌握就不如heuristic来得重要？不见得吧，一个一个独立的algorithm可能不那么重要，但是许许多多相关的组成一个知识网络的时候重要性不见得就比heuristic差吧，我觉得可能更重要，因为大部分的heuristic的获得其实是需要有相当可观的algorithm来做支撑的。</li>
+  <li>既然时间是宝贵的，注定了一人不可能掌握所有的知识，那么为什么不将工作细分，相比于花一个月的时间去学习，不如花一天来请教别人。</li>
+</ul>
+
+<h2 id="references">References</h2>
+<p><a href="http://www.jianshu.com/p/af75879bbb23">学习的逻辑: 知识经济学</a></p>
+
+		]]></description>
+	  </item>
+    
+	  <item>
+        <title>Docker in Practice</title>
+        <link>http://realjenius.com/study/docker/Docker-in-practice/</link>
+		<author>R.J. Lorimer</author>
+		<pubDate>2016-01-11T00:00:00+08:00</pubDate>
+		<guid>http://realjenius.com/study/docker/Docker-in-practice/</guid>
+		<description><![CDATA[
+		   <h2 id="docker-in-practice">Docker in practice</h2>
+<p>###Running public images
+	docker run hello-world
+<strong>A container is a stripped-to-basics version of a Linux operating system. An image is software you load into a container. When you ran the command, the Docker software:</strong></p>
+
+<ul>
+  <li>checked to see if you had the <code class="highlighter-rouge">hello-world</code> software image</li>
+  <li>downloaded the image from the <a href="https://hub.docker.com/">Docker Hub</a></li>
+  <li>loaded the image into the container and “ran” it</li>
+</ul>
+
+<h3 id="build-your-own-image">Build your own image</h3>
+<p>####Step 1 : Write a Dockrfile
+	A Dockerfile describes the software that is “baked” into an image.
+	It isn’t just ingredients tho, it can tell the software what environment to use or what commands to run.</p>
+
+<p>The <code class="highlighter-rouge">FROM</code> keyword tells Docker which image your image is based on. You are basing your new work on the existing <code class="highlighter-rouge">whalesay</code> image. <code class="highlighter-rouge">FROM docker/whalesay:latest</code></p>
+
+<h4 id="step-2--build-an-image-from-your-dockerfile">Step 2 : Build an image from your Dockerfile</h4>
+<div class="highlighter-rouge"><pre class="highlight"><code>docker build -t docker-whale . The `docker build -t docker-whale .` command takes the `Dockerfile` in the current directory, and builds an image called `docker-whale` on your local machine
+</code></pre>
+</div>
+
+<h3 id="cheat-sheet">Cheat sheet</h3>
+<ul>
+  <li>Create a new docker vm:
+<code class="highlighter-rouge">docker-machine create --driver virtualbox default</code></li>
+  <li>List docker machines:
+<code class="highlighter-rouge">docker-machine ls</code></li>
+  <li>Get the environment commands for VM:
+<code class="highlighter-rouge">docker-machine env default</code></li>
+  <li>Connect shell to the machine:
+<code class="highlighter-rouge">eval "$(docker-machine env default)"</code></li>
+  <li>Start an NGINX container on the DOCKER_HOST:
+<code class="highlighter-rouge">docker run -d -P --name web nginx</code></li>
+  <li>Display your running container:
+<code class="highlighter-rouge">docker ps</code></li>
+  <li>View just the container’s ports:
+<code class="highlighter-rouge">docker ps web</code></li>
+  <li>Get the address of the default VM:
+<code class="highlighter-rouge">docker-machine ip default</code></li>
+  <li>To stop running container:
+<code class="highlighter-rouge">docker stop web</code></li>
+  <li>To remove container:
+<code class="highlighter-rouge">docker rm web</code></li>
+</ul>
+
+		]]></description>
+	  </item>
+    
+	  <item>
+        <title>Docker Theoretical</title>
+        <link>http://realjenius.com/study/docker/Docker-Theoretical/</link>
+		<author>R.J. Lorimer</author>
+		<pubDate>2015-12-13T00:00:00+08:00</pubDate>
+		<guid>http://realjenius.com/study/docker/Docker-Theoretical/</guid>
+		<description><![CDATA[
+		   <h2 id="docker-theoratical">Docker Theoratical</h2>
+<p>Docker是一个轻量级虚拟化技术。
+除了基于Docker技术解决构建分布式平台无法回避的经典问题，docker及其生态系统主要带来了以下几点好处：</p>
+
+<ul>
+  <li>持续部署与测试</li>
+  <li>跨云平台支持</li>
+  <li>环境标准化和版本控制</li>
+  <li>搞资源利用率与隔离</li>
+  <li>容器跨平台性与镜像</li>
+  <li>易于理解和易用</li>
+  <li>应用镜像仓库</li>
+</ul>
+
+		]]></description>
+	  </item>
+    
+	  <item>
+        <title>Groovy</title>
+        <link>http://realjenius.com/study/groovy/Groovy/</link>
+		<author>R.J. Lorimer</author>
+		<pubDate>2015-11-30T00:00:00+08:00</pubDate>
+		<guid>http://realjenius.com/study/groovy/Groovy/</guid>
+		<description><![CDATA[
+		   <h2 id="groovy">Groovy</h2>
+
+<h3 id="syntax">Syntax</h3>
+<p><strong>Strings</strong>:</p>
+
+<ul>
+  <li>single quoted string</li>
+</ul>
+
+<blockquote>
+  <p>single line plain string</p>
+</blockquote>
+
+<ul>
+  <li>double quoted string</li>
+</ul>
+
+<blockquote>
+  <p>support string interpolation</p>
+</blockquote>
+
+<ul>
+  <li>triple quoted string</li>
+</ul>
+
+<blockquote>
+  <p>multiple line plain string</p>
+</blockquote>
+
+<p>```groovy
+def number = 1
+def eagerGString = “value == ${number}”
+def lazyGString = “value == ${ -&gt; number}”</p>
+
+<p>assert eagerGString == “value == 1”
+assert lazyGString == “value == 1”</p>
+
+<p>number = 2</p>
+
+<p>assert eagerGString == “value == 1”
+assert lazyGString == “value == 2”
+```</p>
+
+		]]></description>
+	  </item>
+    
+	  <item>
+        <title>This is a test post in Studying Room</title>
+        <link>http://realjenius.com/study/typography/</link>
+		<author>R.J. Lorimer</author>
+		<pubDate>2015-11-16T00:00:00+08:00</pubDate>
+		<guid>http://realjenius.com/study/typography/</guid>
+		<description><![CDATA[
+		   <div class="row">
+<div class="medium-4 medium-push-8 columns">
+    <div class="panel radius">
+      <p id="toc"><strong>Table of Contents</strong></p>
+<ul id="markdown-toc">
+  <li><a href="#lato--a-sans-serif-typeface-family" id="markdown-toc-lato--a-sans-serif-typeface-family">Lato – A Sans Serif Typeface Family</a></li>
+</ul>
+
+    </div>
+  </div><!-- /.medium-4.columns -->
+
+
+
+<div class="medium-8 medium-pull-4 columns">
+
+    <h2 id="lato--a-sans-serif-typeface-family">Lato – A Sans Serif Typeface Family</h2>
+
+    <p>[Lato][4] is a sans serif typeface family started in the summer of 2010 by Warsaw-based designer Łukasz Dziedzic. »Lato« means »Summer« in Polish. In December 2010 the Lato family was published under the Open Font License by his foundry tyPoland, with support from Google.</p>
+
+    <blockquote>
+      <p><span class="teaser">I do not think of type as something that should be readable. It should be beautiful.</span><cite>[Ed Benguiat][3]</cite></p>
+    </blockquote>
+  </div></div>
+
+		]]></description>
+	  </item>
+    
+	  <item>
+        <title>Dummy Stub Fake Mock</title>
+        <link>http://realjenius.com/study/Mock-in-Software-Testing/</link>
+		<author>R.J. Lorimer</author>
+		<pubDate>2015-10-23T00:00:00+08:00</pubDate>
+		<guid>http://realjenius.com/study/Mock-in-Software-Testing/</guid>
+		<description><![CDATA[
+		   <h1 id="dummy-stub-fake-mock">Dummy Stub Fake Mock</h1>
+
+<h3 id="dummy">Dummy</h3>
+<blockquote>
+  <p>An object that is passed around but never used. Typically used to fulfill the parameter list of a method</p>
+</blockquote>
+
+<h3 id="stub">Stub</h3>
+<blockquote>
+  <p>An object that always returns the same canned response. May also hold some dummy state</p>
+</blockquote>
+
+<h3 id="fake">Fake</h3>
+<blockquote>
+  <p>An actual working implementation(not of production quality or configuration) that can replace the real implementation</p>
+</blockquote>
+
+<h3 id="mock">Mock</h3>
+<blockquote>
+  <p>An object that represents a series of expectations and provides canned responses</p>
+</blockquote>
+
+		]]></description>
+	  </item>
+    
+  </channel>
+</rss>
