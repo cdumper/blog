@@ -26,8 +26,7 @@ require 'rubygems'
         system "git add ."
         system "git commit -am #{message.shellescape}"
         system "git push origin gh-pages --force"
-        system "git checkout master"
-        system "echo yolo"
+        system "git checkout plugins"
       end
     end
 
