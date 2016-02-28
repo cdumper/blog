@@ -1,15 +1,26 @@
 ---
 layout: "default"
 title: "Category"
-teaser: "This is the categories."
 breadcrumb: true
-image:
-   header: "unsplash_6_bus_header.jpg"
-   thumb: "unsplash_6_bus_thumb.jpg"
 ---
+<div class="row">
+	<div class="medium-8 columns t30">
+    {% for category_item in site.data.categories %}
+      <div class="row">
+        <div class="small-12 columns b60">
+          <h1><a href="{{ site.url }}{{ category_item.url }}">{{ category_item.title }}</a></h1>
+          <p>
+            {% if category_item.image %}<a href="{{ site.url }}{{ category_item.url }}" title="{{ category_item.title }}"><img src="{{ site.urlimg }}{{ category_item.image }}" class="alignleft" width="150" height="150" alt="{{ page.title }}"></a>{% endif %}
 
-Study
+            {% if category_item.description %}{{ category_item.description | strip_html | escape }}{% endif %}
 
-Experience
+            <a href="{{ site.url }}{{ category_item.url }}"><strong>{{ site.data.language.all_posts }} </strong></a>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
 
-Thoughts
+  <div class="medium-4 columns t30">
+		{% include sidebar.html %}
+	</div>
+</div>

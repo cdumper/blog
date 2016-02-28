@@ -53,7 +53,7 @@ module Jekyll
       self.read_yaml(File.join(base, '_layouts'), "group_index.html")
       self.data["grouptype"] = type
       self.data[type] = val
-      self.data['title'] = "#{val}"
+      self.data['title'] = "#{val.capitalize}"
       # category_title_prefix = site.config['category_title_prefix'] || 'Category: '
       # self.data['title'] = "#{category_title_prefix}#{val}"
     end

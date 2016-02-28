@@ -1,0 +1,17 @@
+- name: Study
+  url: /category/study
+  title: Blogs in Study
+  image: unsplash_6_bus_thumb.jpg
+  description: This section gots all the blogs I wrote down while learing new stuff. 'New stuff' means anything new to myself including techs, history, economics etc.
+
+- name: Experience
+  url: /category/experience
+  title: Blogs in Experience
+  image: unsplash_6_bus_thumb.jpg
+  description: Here I put all the blogs based on what really happened on me. I would like to write down those meaningful things into this part. It'll track my life journey path.
+
+- name: Thoughts
+  url: /category/thoughts
+  title: Blogs in Thoughts
+  image: unsplash_6_bus_thumb.jpg
+  description: This area is a bit of combination of above two. Everything here is my thoughts on studies or experiences.
